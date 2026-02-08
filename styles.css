@@ -1,5 +1,25 @@
 /* ===================================
-   CSS Reset
+   TECHWAVE PODCAST - MAIN STYLESHEET
+   =================================== 
+   
+   Table of Contents:
+   1. CSS Reset
+   2. Root Variables
+   3. Utility Classes
+   4. Base Section Styles
+   5. Navigation
+   6. Hero/Banner Section
+   7. About Section
+   8. Why Choose Section
+   9. Featured Episodes Section
+   10. Host Section
+   11. Footer Section
+   12. Responsive Media Queries
+   
+   =================================== */
+
+/* ===================================
+   1. CSS RESET
    =================================== */
 
 * {
@@ -45,7 +65,7 @@ input {
 }
 
 /* ===================================
-   CSS Root Variables
+   2. ROOT VARIABLES (CSS Custom Properties)
    =================================== */
 
 :root {
@@ -143,7 +163,7 @@ input {
 }
 
 /* ===================================
-   Utility Classes
+   3. UTILITY CLASSES
    =================================== */
 
 .container {
@@ -171,7 +191,7 @@ input {
 }
 
 /* ===================================
-   Section Styles (Base)
+   4. BASE SECTION STYLES
    =================================== */
 
 section {
@@ -186,7 +206,7 @@ section h2 {
 }
 
 /* ===================================
-   Component Styles
+   5. NAVIGATION BAR
    =================================== */
 
 /* Navbar */
@@ -502,6 +522,10 @@ section h2 {
     }
 }
 
+/* ===================================
+   6. HERO/BANNER SECTION
+   =================================== */
+
 /* Banner Section */
 .banner {
     background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
@@ -722,6 +746,10 @@ section h2 {
     }
 }
 
+/* ===================================
+   7. ABOUT SECTION (Statistics)
+   =================================== */
+
 /* About Section */
 .about {
     background-color: var(--bg-dark);
@@ -792,6 +820,10 @@ section h2 {
     color: var(--text-secondary);
     font-weight: var(--font-medium);
 }
+
+/* ===================================
+   8. WHY CHOOSE SECTION (Features)
+   =================================== */
 
 /* Why Choose Section */
 .why-choose {
@@ -870,6 +902,10 @@ section h2 {
     color: var(--text-secondary);
     line-height: 1.6;
 }
+
+/* ===================================
+   9. FEATURED EPISODES SECTION
+   =================================== */
 
 /* Featured Episodes Section */
 .featured-episodes {
@@ -1089,6 +1125,10 @@ section h2 {
     color: var(--primary-light);
 }
 
+/* ===================================
+   10. HOST SECTION
+   =================================== */
+
 /* Host Section */
 .host {
     background-color: var(--bg-dark-secondary);
@@ -1206,6 +1246,10 @@ section h2 {
     color: var(--white);
     transform: scale(1.1);
 }
+
+/* ===================================
+   11. FOOTER SECTION
+   =================================== */
 
 /* Footer Section */
 .footer {
@@ -1346,7 +1390,14 @@ section h2 {
 }
 
 /* ===================================
-   Responsive Media Queries
+   12. RESPONSIVE MEDIA QUERIES
+   =================================== 
+   
+   Breakpoints:
+   - Mobile: up to 575px
+   - Tablet: 576px to 991px  
+   - Desktop: 992px and up
+   
    =================================== */
 
 /* Small devices (up to 576px) - Mobile First Base Styles */
