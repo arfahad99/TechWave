@@ -26,12 +26,6 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: high-quality;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    backface-visibility: hidden;
-    transform: translateZ(0);
 }
 
 a {
@@ -599,7 +593,7 @@ section h2 {
 .microphone-icon {
     width: 120px;
     height: 120px;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) brightness(0) invert(1);
 }
 
 .podcast-circle img {
@@ -841,22 +835,22 @@ section h2 {
 }
 
 .feature-icon {
-    width: 96px;
-    height: 96px;
+    width: 120px;
+    height: 120px;
     margin: 0 auto var(--spacing-lg);
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
     border-radius: var(--radius-xl);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-xl);
     transition: all var(--transition-base);
 }
 
-.feature-icon svg {
+.feature-icon img {
     width: 100%;
     height: 100%;
-    color: var(--primary-light);
+    filter: brightness(0) saturate(100%) invert(70%) sepia(50%) saturate(500%) hue-rotate(200deg);
 }
 
 .feature-card:hover .feature-icon {
@@ -1116,10 +1110,10 @@ section h2 {
     justify-content: center;
     transition: all var(--transition-base);
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
-    width: 64px;
-    height: 64px;
+    width: 72px;
+    height: 72px;
     border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
@@ -1131,12 +1125,9 @@ section h2 {
 }
 
 .social-links img {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     display: block;
-    image-rendering: high-quality;
-    backface-visibility: hidden;
-    transform: translateZ(0);
 }
 
 .social-links svg {
@@ -1144,6 +1135,16 @@ section h2 {
     height: 28px;
     color: var(--primary-light);
     transition: all var(--transition-base);
+}
+
+.social-links a img {
+    filter: brightness(0) saturate(100%) invert(70%) sepia(50%) saturate(500%) hue-rotate(200deg);
+    transition: all var(--transition-base);
+}
+
+.social-links a:hover img {
+    filter: brightness(0) invert(1);
+    transform: scale(1.1);
 }
 
 .social-links a:hover svg {
@@ -1237,10 +1238,10 @@ section h2 {
     justify-content: center;
     transition: all var(--transition-base);
     background-color: rgba(255, 255, 255, 0.15);
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
-    width: 72px;
-    height: 72px;
+    width: 80px;
+    height: 80px;
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -1252,13 +1253,9 @@ section h2 {
 }
 
 .footer-platforms img {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     display: block;
-    image-rendering: high-quality;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    filter: brightness(1.1);
 }
 
 .footer-platforms svg {
@@ -1266,6 +1263,16 @@ section h2 {
     height: 32px;
     color: var(--white);
     transition: all var(--transition-base);
+}
+
+.footer-platforms a img {
+    filter: brightness(0) invert(1);
+    transition: all var(--transition-base);
+}
+
+.footer-platforms a:hover img {
+    filter: brightness(0) saturate(100%) invert(70%) sepia(50%) saturate(500%) hue-rotate(200deg);
+    transform: scale(1.1);
 }
 
 .footer-platforms a:hover svg {
