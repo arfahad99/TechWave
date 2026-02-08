@@ -247,6 +247,18 @@ section h2 {
     width: auto;
 }
 
+.logo-text-white {
+    font-size: var(--font-2xl);
+    font-weight: var(--font-bold);
+    color: var(--white);
+}
+
+.logo-text-pink {
+    font-size: var(--font-2xl);
+    font-weight: var(--font-bold);
+    color: #ec4899;
+}
+
 .logo-text {
     font-size: var(--font-2xl);
     font-weight: var(--font-bold);
@@ -533,12 +545,12 @@ section h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 700px;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: var(--spacing-4xl) 0;
+    padding: var(--spacing-3xl) 0;
     overflow: hidden;
 }
 
@@ -588,14 +600,14 @@ section h2 {
 .podcast-circle {
     position: relative;
     display: inline-block;
-    margin: 0 auto var(--spacing-xl);
+    margin: 0 auto var(--spacing-lg);
     animation: subtle-pulse 3s ease-in-out infinite;
     filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
 }
 
 .circle-gradient {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background: linear-gradient(135deg, #ff6b9d 0%, #c06bff 25%, #8b5cf6 50%, #ffa500 75%, #ff6b9d 100%);
     display: flex;
@@ -615,8 +627,8 @@ section h2 {
 }
 
 .microphone-icon {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) brightness(0) invert(1);
 }
 
@@ -653,15 +665,15 @@ section h2 {
     font-size: var(--font-3xl);
     font-weight: var(--font-bold);
     color: var(--white);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Banner Description */
 .banner-description {
-    font-size: var(--font-lg);
-    color: var(--white);
-    margin-bottom: var(--spacing-xl);
+    font-size: var(--font-base);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -673,18 +685,18 @@ section h2 {
 .banner-buttons {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
     align-items: center;
     justify-content: center;
-    margin-top: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
 }
 
 /* Button Base Styles */
 .btn {
-    padding: var(--spacing-md) var(--spacing-xl);
-    border-radius: var(--radius-lg);
+    padding: var(--spacing-sm) var(--spacing-xl);
+    border-radius: var(--radius-md);
     font-weight: var(--font-semibold);
-    font-size: var(--font-base);
+    font-size: var(--font-sm);
     color: var(--white);
     transition: all var(--transition-base);
     display: inline-flex;
@@ -692,7 +704,7 @@ section h2 {
     gap: var(--spacing-sm);
     cursor: pointer;
     text-align: center;
-    min-width: 180px;
+    min-width: 160px;
     justify-content: center;
 }
 
@@ -753,7 +765,7 @@ section h2 {
 /* About Section */
 .about {
     background-color: var(--bg-dark);
-    padding: var(--spacing-4xl) 0;
+    padding: var(--spacing-3xl) 0;
 }
 
 .about-header {
@@ -828,7 +840,7 @@ section h2 {
 /* Why Choose Section */
 .why-choose {
     background-color: var(--bg-dark-secondary);
-    padding: var(--spacing-4xl) 0;
+    padding: var(--spacing-3xl) 0;
 }
 
 .why-choose h2 {
@@ -910,7 +922,7 @@ section h2 {
 /* Featured Episodes Section */
 .featured-episodes {
     background-color: var(--bg-dark);
-    padding: var(--spacing-4xl) 0;
+    padding: var(--spacing-3xl) 0;
 }
 
 .featured-episodes h2 {
@@ -1132,7 +1144,7 @@ section h2 {
 /* Host Section */
 .host {
     background-color: var(--bg-dark-secondary);
-    padding: var(--spacing-4xl) 0;
+    padding: var(--spacing-3xl) 0;
 }
 
 /* Host Container - Mobile First (Stacked Vertically) */
@@ -1253,30 +1265,15 @@ section h2 {
 
 /* Footer Section */
 .footer {
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: var(--spacing-4xl) 0;
+    background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 100%);
+    padding: var(--spacing-3xl) 0;
     position: relative;
-    min-height: 300px;
+    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-top: 1px solid rgba(99, 102, 241, 0.2);
-}
-
-/* Footer overlay for better text readability */
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
-    z-index: 0;
+    overflow: hidden;
 }
 
 .footer-content {
@@ -1293,100 +1290,95 @@ section h2 {
     width: 100%;
 }
 
-/* Footer Brand */
-.footer-brand {
-    width: 100%;
+/* Large Footer Logo */
+.footer-logo-large {
+    font-size: var(--font-4xl);
+    font-weight: var(--font-extrabold);
+    letter-spacing: -1px;
+    margin-bottom: 0;
 }
 
-.footer-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-sm);
-}
-
-.footer-logo .logo-icon {
-    font-size: 2rem;
-}
-
-.footer-brand h3 {
-    font-size: var(--font-2xl);
-    font-weight: var(--font-bold);
+.logo-text-white {
     color: var(--white);
-    margin: 0;
 }
 
-.footer-brand p {
-    font-size: var(--font-base);
-    color: var(--gray-200);
+.logo-text-pink {
+    color: #ec4899;
 }
 
-/* Footer Platforms */
-.footer-platforms {
+/* Inline Platform Links */
+.footer-platforms-inline {
     display: flex;
     gap: var(--spacing-xl);
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.footer-platforms a {
-    display: inline-flex;
+.footer-platforms-inline a {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    gap: var(--spacing-xs);
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+    font-weight: var(--font-medium);
     transition: all var(--transition-base);
-    background-color: rgba(255, 255, 255, 0.15);
-    padding: var(--spacing-lg);
-    border-radius: var(--radius-lg);
-    width: 80px;
-    height: 80px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-decoration: none;
 }
 
-.footer-platforms a:hover {
-    transform: translateY(-5px) scale(1.1);
-    background-color: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.footer-platforms img {
-    width: 44px;
-    height: 44px;
-    display: block;
-}
-
-.footer-platforms svg {
-    width: 32px;
-    height: 32px;
+.footer-platforms-inline a:hover {
     color: var(--white);
+    transform: translateY(-2px);
+}
+
+.footer-platforms-inline img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) saturate(100%) invert(70%) sepia(10%) saturate(500%) hue-rotate(200deg);
     transition: all var(--transition-base);
 }
 
-.footer-platforms a img {
+.footer-platforms-inline a:hover img {
     filter: brightness(0) invert(1);
-    transition: all var(--transition-base);
 }
 
-.footer-platforms a:hover img {
-    filter: brightness(0) saturate(100%) invert(70%) sepia(50%) saturate(500%) hue-rotate(200deg);
-    transform: scale(1.1);
+/* Audio Waveform Background */
+.waveform-left,
+.waveform-right {
+    position: absolute;
+    height: 100%;
+    width: 300px;
+    opacity: 0.4;
+    pointer-events: none;
 }
 
-.footer-platforms a:hover svg {
-    color: var(--primary-light);
-    transform: scale(1.1);
+.waveform-left {
+    left: 0;
+    top: 0;
+}
+
+.waveform-right {
+    right: 0;
+    top: 0;
+    transform: scaleX(-1);
 }
 
 /* Footer Copyright */
 .footer-copyright {
     width: 100%;
+    margin-top: 0;
 }
 
 .footer-copyright p {
     font-size: var(--font-sm);
-    color: var(--gray-300);
+    color: var(--text-secondary);
+}
+
+/* Remove old footer styles */
+.footer-brand,
+.footer-logo,
+.footer-platforms {
+    display: none;
 }
 
 /* ===================================
@@ -1418,21 +1410,21 @@ section h2 {
     }
     
     section {
-        padding: var(--spacing-4xl) 0;
+        padding: var(--spacing-3xl) 0;
     }
     
     .circle-gradient {
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
     }
     
     .microphone-icon {
-        width: 140px;
-        height: 140px;
+        width: 100px;
+        height: 100px;
     }
     
     .podcast-circle img {
-        max-width: 350px;
+        max-width: 250px;
     }
     
     .banner-heading {
@@ -1440,12 +1432,12 @@ section h2 {
     }
     
     .banner-description {
-        font-size: var(--font-xl);
+        font-size: var(--font-lg);
     }
     
     .banner-buttons {
         flex-direction: row;
-        gap: var(--spacing-lg);
+        gap: var(--spacing-md);
     }
     
     /* About Section - Maintain 2 columns on medium devices */
@@ -1465,16 +1457,20 @@ section h2 {
     
     /* Footer Section - Enhanced spacing for medium devices */
     .footer {
-        padding: var(--spacing-4xl) 0;
+        padding: var(--spacing-3xl) 0;
     }
     
-    .footer-content {
+    .footer-logo-large {
+        font-size: var(--font-5xl);
+    }
+    
+    .footer-platforms-inline {
         gap: var(--spacing-xl);
     }
     
-    .footer-platforms img {
-        width: 52px;
-        height: 52px;
+    .waveform-left,
+    .waveform-right {
+        width: 250px;
     }
 }
 
@@ -1484,27 +1480,31 @@ section h2 {
         --container-padding: var(--spacing-xl);
     }
     
+    section {
+        padding: var(--spacing-4xl) 0;
+    }
+    
     section h2 {
-        font-size: var(--font-5xl);
+        font-size: var(--font-4xl);
     }
     
     .circle-gradient {
-        width: 400px;
-        height: 400px;
+        width: 280px;
+        height: 280px;
     }
     
     .microphone-icon {
-        width: 160px;
-        height: 160px;
+        width: 110px;
+        height: 110px;
     }
     
     .podcast-circle img {
-        max-width: 400px;
+        max-width: 280px;
     }
     
     .badge-new {
-        font-size: var(--font-base);
-        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: var(--font-sm);
+        padding: var(--spacing-xs) var(--spacing-md);
     }
     
     .banner-heading {
@@ -1512,13 +1512,13 @@ section h2 {
     }
     
     .banner-description {
-        font-size: var(--font-2xl);
+        font-size: var(--font-xl);
     }
     
     .btn {
-        padding: var(--spacing-lg) var(--spacing-2xl);
-        font-size: var(--font-lg);
-        min-width: 200px;
+        padding: var(--spacing-md) var(--spacing-xl);
+        font-size: var(--font-base);
+        min-width: 180px;
     }
     
     /* About Section - 4 columns on large devices */
@@ -1527,15 +1527,15 @@ section h2 {
     }
     
     .about-header h2 {
-        font-size: var(--font-5xl);
+        font-size: var(--font-4xl);
     }
     
     .stat-icon {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     
     .stat-number {
-        font-size: var(--font-5xl);
+        font-size: var(--font-4xl);
     }
     
     /* Why Choose Section - 3 columns on large devices */
@@ -1544,7 +1544,7 @@ section h2 {
     }
     
     .why-choose h2 {
-        font-size: var(--font-5xl);
+        font-size: var(--font-4xl);
     }
     
     /* Featured Episodes Section - 3 columns on large devices */
@@ -1553,14 +1553,14 @@ section h2 {
     }
     
     .featured-episodes h2 {
-        font-size: var(--font-5xl);
+        font-size: var(--font-4xl);
     }
     
     /* Host Section - Flexbox with image on left (40%), info on right (60%) */
     .host-container {
         flex-direction: row;
         align-items: center;
-        gap: var(--spacing-4xl);
+        gap: var(--spacing-3xl);
     }
     
     .host-image {
@@ -1574,15 +1574,15 @@ section h2 {
     }
     
     .host-info h2 {
-        font-size: var(--font-2xl);
+        font-size: var(--font-xl);
     }
     
     .host-info h3 {
-        font-size: var(--font-4xl);
+        font-size: var(--font-3xl);
     }
     
     .host-info p {
-        font-size: var(--font-lg);
+        font-size: var(--font-base);
     }
     
     .social-links {
@@ -1591,39 +1591,29 @@ section h2 {
     
     /* Footer Section - Enhanced for large devices */
     .footer {
-        padding: var(--spacing-4xl) 0;
+        padding: var(--spacing-3xl) 0;
     }
     
-    .footer-content {
+    .footer-logo-large {
+        font-size: var(--font-5xl);
+    }
+    
+    .footer-platforms-inline {
         gap: var(--spacing-2xl);
     }
     
-    .footer-brand h3 {
-        font-size: var(--font-3xl);
+    .footer-platforms-inline a {
+        font-size: var(--font-base);
     }
     
-    .footer-brand p {
-        font-size: var(--font-lg);
+    .footer-platforms-inline img {
+        width: 20px;
+        height: 20px;
     }
     
-    .footer-platforms img {
-        width: 44px;
-        height: 44px;
-    }
-    
-    .footer-platforms svg {
-        width: 36px;
-        height: 36px;
-    }
-    
-    .social-links img {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .social-links svg {
-        width: 32px;
-        height: 32px;
+    .waveform-left,
+    .waveform-right {
+        width: 350px;
     }
     
     .feature-icon {
