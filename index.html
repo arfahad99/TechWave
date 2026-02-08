@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechWave Podcast - Exploring the latest in technology and innovation">
+    <title>TechWave Podcast - Your Source for Tech Discussions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">🎙️</span>
+                <span class="logo-text">TechWave</span>
+            </div>
+            
+            <!-- CSS-only hamburger toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#episodes">Episodes</a></li>
+                <li><a href="#host">Host</a></li>
+            </ul>
+            
+            <div class="subscribe-form">
+                <input type="email" placeholder="Enter your email" class="email-input" id="subscribe-email" required>
+                <button type="submit" class="cta-button gradient-button">
+                    <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 17H20L18.5951 5.89465C18.2774 3.6581 16.3251 2 14.0726 2H9.92735C7.67496 2 5.72263 3.6581 5.40493 5.89465L4 17H9M15 17V20C15 21.1046 14.1046 22 13 22H11C9.89543 22 9 21.1046 9 20V17M15 17H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner" id="home">
+        <div class="banner-container">
+            <div class="podcast-circle">
+                <div class="circle-gradient">
+                    <svg class="microphone-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1C10.34 1 9 2.34 9 4V12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12V4C15 2.34 13.66 1 12 1Z" fill="white"/>
+                        <path d="M19 10V12C19 15.87 15.87 19 12 19C8.13 19 5 15.87 5 12V10H3V12C3 16.97 7.03 21 12 21C16.97 21 21 16.97 21 12V10H19Z" fill="white"/>
+                        <path d="M11 21H13V24H11V21Z" fill="white"/>
+                    </svg>
+                </div>
+                <span class="badge-new">New</span>
+            </div>
+            <h1 class="banner-heading">Welcome to TechWave Podcast</h1>
+            <p class="banner-description">Exploring the latest in technology and innovation with industry experts and thought leaders</p>
+            <div class="banner-buttons">
+                <a href="#listen" class="btn btn-primary">
+                    <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                    </svg>
+                    Listen Now
+                </a>
+                <a href="#episodes" class="btn btn-secondary">
+                    <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <path d="M8 21H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M12 17V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Browse Episodes
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-header">
+            <h2>About TechWave</h2>
+            <p>Your source for cutting-edge tech discussions</p>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-icon">🎙️</div>
+                <h3 class="stat-number">500+</h3>
+                <p class="stat-label">Episodes</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">👥</div>
+                <h3 class="stat-number">1M+</h3>
+                <p class="stat-label">Listeners</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">🌍</div>
+                <h3 class="stat-number">50+</h3>
+                <p class="stat-label">Countries</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">⭐</div>
+                <h3 class="stat-number">4.9</h3>
+                <p class="stat-label">Rating</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <h2>Why Choose TechWave</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1C10.34 1 9 2.34 9 4V12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12V4C15 2.34 13.66 1 12 1Z" fill="currentColor"/>
+                        <path d="M19 10V12C19 15.87 15.87 19 12 19C8.13 19 5 15.87 5 12V10H3V12C3 16.97 7.03 21 12 21C16.97 21 21 16.97 21 12V10H19Z" fill="currentColor"/>
+                        <path d="M11 21H13V24H11V21Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Expert Hosts</h3>
+                <p>Industry leaders sharing their insights and expertise on the latest technology trends</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="currentColor"/>
+                        <path d="M12 6C8.69 6 6 8.69 6 12C6 15.31 8.69 18 12 18C15.31 18 18 15.31 18 12C18 8.69 15.31 6 12 6ZM12 16C9.79 16 8 14.21 8 12C8 9.79 9.79 8 12 8C14.21 8 16 9.79 16 12C16 14.21 14.21 16 12 16Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Quality Audio</h3>
+                <p>Crystal clear sound production for the best listening experience</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Weekly Episodes</h3>
+                <p>Fresh content delivered every week to keep you updated</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <path d="M8 21H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M12 17V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <rect x="5" y="6" width="14" height="8" rx="1" fill="currentColor" opacity="0.3"/>
+                    </svg>
+                </div>
+                <h3>Multi-Platform</h3>
+                <p>Listen anywhere, anytime on your favorite platform</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" fill="currentColor"/>
+                        <circle cx="7" cy="9" r="1.5" fill="white"/>
+                        <circle cx="12" cy="9" r="1.5" fill="white"/>
+                        <circle cx="17" cy="9" r="1.5" fill="white"/>
+                    </svg>
+                </div>
+                <h3>Engaged Community</h3>
+                <p>Join thousands of tech enthusiasts in meaningful discussions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Episodes Section -->
+    <section class="featured-episodes" id="episodes">
+        <h2>Featured Episodes</h2>
+        <div class="episodes-grid">
+            <div class="episode-card">
+                <div class="video-container">
+                    <div class="device-mockup">
+                        <div class="device-screen">
+                            <svg class="play-overlay" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="11" fill="rgba(99, 102, 241, 0.9)"/>
+                                <path d="M10 8L16 12L10 16V8Z" fill="white"/>
+                            </svg>
+                            <div class="video-thumbnail" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                <svg class="thumbnail-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.5 2C8.67 2 8 2.67 8 3.5V4H6C4.89 4 4 4.89 4 6V18C4 19.11 4.89 20 6 20H18C19.11 20 20 19.11 20 18V6C20 4.89 19.11 4 18 4H16V3.5C16 2.67 15.33 2 14.5 2H9.5ZM12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7ZM12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9Z" fill="white" opacity="0.3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-content">
+                    <h3>The Future of AI</h3>
+                    <p>Exploring artificial intelligence and its impact on society, business, and everyday life</p>
+                    <div class="episode-meta">
+                        <span class="duration">⏱️ 45 min</span>
+                        <span class="views">👁️ 2.5M views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-card">
+                <div class="video-container">
+                    <div class="device-mockup">
+                        <div class="device-screen">
+                            <svg class="play-overlay" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="11" fill="rgba(139, 92, 246, 0.9)"/>
+                                <path d="M10 8L16 12L10 16V8Z" fill="white"/>
+                            </svg>
+                            <div class="video-thumbnail" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                <svg class="thumbnail-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2ZM12 4.18L19.09 7.5L12 10.82L4.91 7.5L12 4.18ZM4 9.18L11 12.5V19.82L4 16.5V9.18ZM13 19.82V12.5L20 9.18V16.5L13 19.82Z" fill="white" opacity="0.3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-content">
+                    <h3>Blockchain Revolution</h3>
+                    <p>Understanding blockchain technology and its applications beyond cryptocurrency</p>
+                    <div class="episode-meta">
+                        <span class="duration">⏱️ 38 min</span>
+                        <span class="views">👁️ 1.8M views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-card">
+                <div class="video-container">
+                    <div class="device-mockup">
+                        <div class="device-screen">
+                            <svg class="play-overlay" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="11" fill="rgba(236, 72, 153, 0.9)"/>
+                                <path d="M10 8L16 12L10 16V8Z" fill="white"/>
+                            </svg>
+                            <div class="video-thumbnail" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                <svg class="thumbnail-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4C9.11 4 6.6 5.64 5.35 8.04C2.34 8.36 0 10.91 0 14C0 17.31 2.69 20 6 20H19C21.76 20 24 17.76 24 15C24 12.36 21.95 10.22 19.35 10.04ZM19 18H6C3.79 18 2 16.21 2 14C2 11.95 3.53 10.24 5.56 10.03L6.63 9.92L7.13 8.97C8.08 7.14 9.94 6 12 6C14.62 6 16.88 7.86 17.39 10.43L17.69 11.93L19.22 12.04C20.78 12.14 22 13.45 22 15C22 16.65 20.65 18 19 18Z" fill="white" opacity="0.3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-content">
+                    <h3>Cloud Computing Trends</h3>
+                    <p>Diving into the latest cloud technologies and how they're transforming businesses</p>
+                    <div class="episode-meta">
+                        <span class="duration">⏱️ 52 min</span>
+                        <span class="views">👁️ 3.2M views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Host Section -->
+    <section class="host" id="host">
+        <div class="host-container">
+            <div class="host-image">
+                <img src="assets/host.png" alt="Alex Chen - TechWave Podcast Host">
+            </div>
+            <div class="host-info">
+                <h2>Meet Your Host</h2>
+                <h3>Alex Chen</h3>
+                <p>Tech enthusiast and industry veteran with 15 years of experience in software development and innovation. Alex brings deep insights into emerging technologies and their real-world applications, making complex topics accessible to everyone.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 3H4C3.45 3 3 3.45 3 4V20C3 20.55 3.45 21 4 21H20C20.55 21 21 20.55 21 20V4C21 3.45 20.55 3 20 3ZM8.5 18.5H5.5V10H8.5V18.5ZM7 8.5C6.17 8.5 5.5 7.83 5.5 7C5.5 6.17 6.17 5.5 7 5.5C7.83 5.5 8.5 6.17 8.5 7C8.5 7.83 7.83 8.5 7 8.5ZM18.5 18.5H15.5V14C15.5 12.62 14.38 11.5 13 11.5C11.62 11.5 10.5 12.62 10.5 14V18.5H7.5V10H10.5V11.19C11.14 10.45 12.13 10 13.25 10C15.77 10 17.75 11.98 17.75 14.5V18.5H18.5Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 3C22.0424 3.67548 20.9821 4.19211 19.86 4.53C19.2577 3.83751 18.4573 3.34669 17.567 3.12393C16.6767 2.90116 15.7395 2.95718 14.8821 3.28445C14.0247 3.61173 13.2884 4.1944 12.773 4.95372C12.2575 5.71303 11.9877 6.61234 12 7.53V8.53C10.2426 8.57557 8.50127 8.18581 6.93101 7.39545C5.36074 6.60508 4.01032 5.43864 3 4C3 4 -1 13 8 17C5.94053 18.398 3.48716 19.0989 1 19C10 24 21 19 21 7.5C20.9991 7.22145 20.9723 6.94359 20.92 6.67C21.9406 5.66349 22.6608 4.39271 23 3V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 9.71C23 8.76 22.26 8 21.3 8H2.7C1.74 8 1 8.76 1 9.71V14.29C1 15.24 1.74 16 2.7 16H21.3C22.26 16 23 15.24 23 14.29V9.71Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M10 11L14 13L10 15V11Z" fill="currentColor"/>
+                            <rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Spotify">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M7 14C9 13 15 13 17 14M7.5 11C10 10 14 10 16.5 11M8 17C10 16 14 16 16 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon">🎙️</span>
+                    <h3>TechWave Podcast</h3>
+                </div>
+                <p>Available on all major platforms</p>
+            </div>
+            <div class="footer-platforms">
+                <a href="#" aria-label="Listen on Spotify" class="platform-link">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <path d="M7 14C9 13 15 13 17 14M7.5 11C10 10 14 10 16.5 11M8 17C10 16 14 16 16 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Watch on YouTube" class="platform-link">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <path d="M10 9L15 12L10 15V9Z" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Listen on Apple Podcasts" class="platform-link">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <path d="M12 6C9.79 6 8 7.79 8 10C8 11.2 8.53 12.27 9.38 13L10 18H14L14.62 13C15.47 12.27 16 11.2 16 10C16 7.79 14.21 6 12 6Z" fill="currentColor"/>
+                        <circle cx="12" cy="10" r="1.5" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 TechWave Podcast. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
