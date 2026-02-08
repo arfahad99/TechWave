@@ -554,6 +554,23 @@ section h2 {
     overflow: hidden;
 }
 
+/* Waveform background for banner */
+.banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/waveform-header.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    z-index: 0;
+    pointer-events: none;
+}
+
 /* Add animated gradient overlay */
 .banner::before {
     content: '';
@@ -958,8 +975,8 @@ section h2 {
     border-color: rgba(99, 102, 241, 0.5);
 }
 
-/* Episode Thumbnail Container */
-.episode-thumbnail {
+/* Episode Video Container */
+.episode-video {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
@@ -968,49 +985,14 @@ section h2 {
     background: var(--bg-dark-secondary);
 }
 
-.thumbnail-image {
+.episode-video iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform var(--transition-slow);
-}
-
-.episode-card:hover .thumbnail-image {
-    transform: scale(1.05);
-}
-
-.play-button-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: opacity var(--transition-base);
-    z-index: 2;
-}
-
-.episode-card:hover .play-button-overlay {
-    opacity: 1;
-}
-
-.play-icon {
-    width: 70px;
-    height: 70px;
-    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
-    transition: transform var(--transition-base);
-    cursor: pointer;
-}
-
-.episode-card:hover .play-icon {
-    transform: scale(1.1);
+    border: none;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
 /* Remove old video container styles */
@@ -1276,6 +1258,23 @@ section h2 {
     overflow: hidden;
 }
 
+/* Waveform background for footer */
+.footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/waveform-footer.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: 0;
+    pointer-events: none;
+}
+
 .footer-content {
     max-width: var(--container-max-width);
     margin: 0 auto;
@@ -1340,27 +1339,6 @@ section h2 {
 
 .footer-platforms-inline a:hover img {
     filter: brightness(0) invert(1);
-}
-
-/* Audio Waveform Background */
-.waveform-left,
-.waveform-right {
-    position: absolute;
-    height: 100%;
-    width: 300px;
-    opacity: 0.4;
-    pointer-events: none;
-}
-
-.waveform-left {
-    left: 0;
-    top: 0;
-}
-
-.waveform-right {
-    right: 0;
-    top: 0;
-    transform: scaleX(-1);
 }
 
 /* Footer Copyright */
