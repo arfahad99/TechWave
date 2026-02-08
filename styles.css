@@ -910,7 +910,62 @@ section h2 {
     border-color: rgba(99, 102, 241, 0.5);
 }
 
-/* Responsive Video Container - 16:9 Aspect Ratio */
+/* Episode Thumbnail Container */
+.episode-thumbnail {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    background: var(--bg-dark-secondary);
+}
+
+.thumbnail-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.episode-card:hover .thumbnail-image {
+    transform: scale(1.05);
+}
+
+.play-button-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    z-index: 2;
+}
+
+.episode-card:hover .play-button-overlay {
+    opacity: 1;
+}
+
+.play-icon {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+    transition: transform var(--transition-base);
+    cursor: pointer;
+}
+
+.episode-card:hover .play-icon {
+    transform: scale(1.1);
+}
+
+/* Remove old video container styles */
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
